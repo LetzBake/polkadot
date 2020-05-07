@@ -352,11 +352,7 @@ impl TransactionPool<Hash, Block> for EmptyTransactionPool {
 
 	fn import(
 		&self,
-		_report_handle: ReportHandle,
-		_who: PeerId,
-		_rep_change_good: sc_network::ReputationChange,
-		_rep_change_bad: sc_network::ReputationChange,
-		_transaction: Extrinsic
+		_transaction: Extrinsic,
 	) {}
 
 	fn on_broadcasted(&self, _: HashMap<Hash, Vec<String>>) {}
